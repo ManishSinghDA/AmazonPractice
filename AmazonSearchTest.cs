@@ -42,8 +42,11 @@ namespace AmazonAutomationPractise
             selectElement.SelectByText("Baby");
             driver.FindElement(By.XPath("/html/body/div[1]/header/div/div[1]/div[3]/div/form/div[3]/div[1]/input")).SendKeys(("Johnson Diapers"));
             driver.FindElement(By.XPath("/html/body/div[1]/header/div/div[1]/div[3]/div/form/div[2]/div/input")).Click();
-            System.Threading.Thread.Sleep(50);
-           driver.FindElement(By.XPath("//*[@id="p_89/Johnson's"]")).Click();
+            System.Threading.Thread.Sleep(150);
+           driver.FindElement(By.XPath("//*[@id=\"p_89/Johnson's\"]/span/a")).Click();
+            //*[@id="p_89/Johnson's"]/span/a
+            //*[@id="p_89/Johnson's"]
+            //*[@id="p_89/Johnson's"]/span/a
             //*[@id="p_89/Johnson's"]
             //driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div[1]/div[1]/div/div[3]/span/div/div[6]/ul/li[2]/span/a/span")).Click();
             //driver.FindElement(By.ClassName("a-size-base a-color-base")).Click();
